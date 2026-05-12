@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather">
+        <h1>Погода</h1>
+        <div class="search-section">
+          <input
+            type="text"
+            id="cityInput"
+            class="city-input"
+            placeholder="Например: Ставрополь, Токио, Рим..."
+            autocomplete="off"
+          />
+          <div class="btn-group">
+            <button id="getWeatherBtn" class="get-weather-btn">Найти</button>
+            <button id="geoBtn" class="geo-btn" title="Моё местоположение">
+              Погода в вашем городе
+            </button>
+          </div>
+        </div>
+
+        <div id="currentWeatherBlock" class="current-weather">
+          <div style="opacity: 0.6; padding: 32px">
+            Введите город или разрешите геолокацию
+          </div>
+        </div>
+      </div>
+
+      <div id="forecastBlock" class="forecast-section" style="display: none">
+        <div class="forecast-title">Прогноз на 5 дней</div>
+        <div id="forecastGrid" class="forecast-grid"></div>
+      </div>
+      <footer>данные OpenWeatherMap</footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
