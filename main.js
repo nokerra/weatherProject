@@ -131,7 +131,8 @@ function renderForecast(forecastData) {
 }
 
 async function fetchWeatherAndForecast(city) {
-  if (!city.trim()) {
+  city = city.trim();
+  if (!city) {
     showError("Пожалуйста, введите город");
     return;
   }
