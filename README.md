@@ -44,4 +44,5 @@
 ---
 
 Проект хостится на Github Pages и доступен [здесь](https://nokerra.github.io/weatherProject/).
+
 [Сам текст курсовой работы.](https://docs.google.com/document/d/1qkRXaGY-VZP2PVqFKCSjr9lQUAPaOquX/edit?usp=sharing&ouid=113170876304757516063&rtpof=true&sd=true)
